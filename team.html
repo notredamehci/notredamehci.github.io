@@ -108,12 +108,12 @@ roles:
 
 <h2>Alunmi</h2>
 
-<div class="mb4 flex flex-wrap">
+<div class="flex flex-wrap">
   {% assign alumni = site.people | where_exp: 'p', 'p.alumni_since' %}
   {% assign sorted_alumni = alumni | sort: 'alumni_since' | reverse %}
   <div class="flex flex-wrap">
     {% for person in sorted_alumni %}
-    <div class="w-25-m w-10-l w-50 ph2 pv2">
+    <div class="w-25-m w-20-l w-50 ph2 pv2">
       {% if person.website %}<a href="{{ person.website }}">{% endif %}
         <span title="{{ person.name }} ({{ person.role }})">
           <img src="{{ person.image | relative_url }}" alt="Picture of {{ person.name }}" loading="lazy" class="br3" />
