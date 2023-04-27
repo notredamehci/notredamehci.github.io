@@ -28,49 +28,42 @@ body {
 }
 
 :root {
-  --cmu-red: #b00;
-  --cmu-gray: #e0e0e0;
-  --cmu-dark-gray: #666;
-
-  --cmu-gold: #a60;
-  --cmu-teal: #067;
-  --cmu-blue: #247;
-  --cmu-green: #085;
-  --cmu-dark-green: #243;
-
-  --pink: #faa;
-
-  --text-color: #000;
-
+  --nd-red: #b00;
+  --nd-gray: #e0e0e0;
+  --nd-dark-gray: #666;
+  --nd-teal: #067;
+  --nd-dark-green: #243;
   --nd-blue: #0C2340;
   --nd-gold: #C99700;
   --nd-green: #00843D;
   --nd-cyan: #5aabbc;
   --nd-beige: #f6e7a1;
+  --pink: #faa;
+  --text-color: #000;
 }
 
-.cmu-red {
-  color: var(--cmu-red);
+.nd-red {
+  color: var(--nd-red);
 }
-.cmu-dark-gray {
-  color: var(--cmu-dark-gray);
+.nd-dark-gray {
+  color: var(--nd-dark-gray);
 }
-.cmu-gray {
-  color: var(--cmu-gray);
+.nd-gray {
+  color: var(--nd-gray);
 }
-.hover-cmu-red:hover {
-  color: var(--cmu-red);
-}
-
-.bg-cmu-dark-gray {
-  background-color: var(--cmu-dark-gray);
-}
-.bg-cmu-gray {
-  background-color: var(--cmu-gray);
+.hover-nd-red:hover {
+  color: var(--nd-red);
 }
 
-.b--cmu-red {
-  border-color: var(--cmu-red);
+.bg-nd-dark-gray {
+  background-color: var(--nd-dark-gray);
+}
+.bg-nd-gray {
+  background-color: var(--nd-gray);
+}
+
+.b--nd-red {
+  border-color: var(--nd-red);
 }
 
 h1,
@@ -79,11 +72,11 @@ h3,
 h4,
 h5,
 h6 {
-  @extend .cmu-dark-gray, .mt4, .mb3, .lh-title;
+  @extend .nd-dark-gray, .mt4, .mb3, .lh-title;
 }
 
 .cta {
-  color: var(--cmu-dark-gray);
+  color: var(--nd-dark-gray);
 
   @extend .ttu, .no-underline, .b;
 
@@ -106,7 +99,7 @@ h6 {
 
 main {
   a {
-    color: var(--cmu-red);
+    color: var(--nd-red);
     text-decoration-color: var(--pink);
     @extend .link;
 
@@ -118,8 +111,8 @@ main {
 }
 
 button {
-  border-bottom: 2px solid var(--cmu-dark-gray);
-  background-color: 2px solid var(--cmu-gray);
+  border-bottom: 2px solid var(--nd-dark-gray);
+  background-color: 2px solid var(--nd-gray);
   padding: 0.2rem 0.6rem;
 }
 
@@ -134,7 +127,7 @@ button {
     var(--nd-gold)
   );
   background-size: 800% 800%;
-  animation: move 20s ease infinite;
+  animation: move 30s ease infinite;
 
   @keyframes move {
     0% {
