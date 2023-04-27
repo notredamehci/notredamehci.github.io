@@ -20,17 +20,17 @@ roles:
   {% for person in site.people %}
   {% if person.role == "Faculty" %}
   {% unless person.alumni_since %}
-  <div class="w-25-m w-20-l w-50 ph2 pv2 center">
+  <div class="w-25-m w-20-l w-50 ph2 pv2">
     {% if person.website %}<a href="{{ person.website }}">{% endif %}
       <span{% if person.content %} title="Fun fact: {{ person.content }}" {% endif %}>
         <img src="{{ person.image | relative_url }}" alt="Picture of {{ person.name }}" loading="lazy" class="br3" />
-        <span class="black">
+        <span class="black center">
           {{ person.name }}
         </span>
         </span>
         {% if person.website %}
     </a>{% endif %}
-    <div class="gray">({{ person.title }})</div>
+    <div class="gray center">({{ person.title }})</div>
   </div>
   {% endunless %}
   {% endif %}
@@ -43,17 +43,17 @@ roles:
   {% for person in site.people %}
   {% if person.role == "Graduate Student" %}
   {% unless person.alumni_since %}
-  <div class="w-25-m w-20-l w-50 ph2 pv2 center">
+  <div class="w-25-m w-20-l w-50 ph2 pv2">
     {% if person.website %}<a href="{{ person.website }}">{% endif %}
       <span{% if person.content %} title="Fun fact: {{ person.content }}" {% endif %}>
         <img src="{{ person.image | relative_url }}" alt="Picture of {{ person.name }}" loading="lazy" class="br3" />
-        <span class="black">
+        <span class="black center">
           {{ person.name }}
         </span>
         </span>
         {% if person.website %}
     </a>{% endif %}
-    <div class="gray">({{ person.title }})</div>
+    <div class="gray center">({{ person.title }})</div>
   </div>
   {% endunless %}
   {% endif %}
@@ -66,17 +66,17 @@ roles:
   {% for person in site.people %}
   {% if person.role == "Undergraduate" %}
   {% unless person.alumni_since %}
-  <div class="w-25-m w-20-l w-50 ph2 pv2 center">
+  <div class="w-25-m w-20-l w-50 ph2 pv2">
     {% if person.website %}<a href="{{ person.website }}">{% endif %}
       <span{% if person.content %} title="Fun fact: {{ person.content }}" {% endif %}>
         <img src="{{ person.image | relative_url }}" alt="Picture of {{ person.name }}" loading="lazy" class="br3" />
-        <span class="black">
+        <span class="black center">
           {{ person.name }}
         </span>
         </span>
         {% if person.website %}
     </a>{% endif %}
-    <div class="gray">({{ person.title }})</div>
+    <div class="gray center">({{ person.title }})</div>
   </div>
   {% endunless %}
   {% endif %}
@@ -89,17 +89,17 @@ roles:
   {% for person in site.people %}
   {% if person.role == "Visiting Scholar" %}
   {% unless person.alumni_since %}
-  <div class="w-25-m w-20-l w-50 ph2 pv2 center">
+  <div class="w-25-m w-20-l w-50 ph2 pv2">
     {% if person.website %}<a href="{{ person.website }}">{% endif %}
       <span{% if person.content %} title="Fun fact: {{ person.content }}" {% endif %}>
         <img src="{{ person.image | relative_url }}" alt="Picture of {{ person.name }}" loading="lazy" class="br3" />
-        <span class="black">
+        <span class="black center">
           {{ person.name }}
         </span>
         </span>
         {% if person.website %}
     </a>{% endif %}
-    <div class="gray">({{ person.title }})</div>
+    <div class="gray center">({{ person.title }})</div>
   </div>
   {% endunless %}
   {% endif %}
@@ -113,14 +113,14 @@ roles:
   {% assign sorted_alumni = alumni | sort: 'alumni_since' | reverse %}
   <div class="flex flex-wrap">
     {% for person in sorted_alumni %}
-    <div class="w-25-m w-10-l w-50 ph2 pv2 center">
+    <div class="w-25-m w-10-l w-50 ph2 pv2">
       {% if person.website %}<a href="{{ person.website }}">{% endif %}
         <span title="{{ person.name }} ({{ person.role }})">
           <img src="{{ person.image | relative_url }}" alt="Picture of {{ person.name }}" loading="lazy" class="br3" />
-          <span class="black">
+          <span class="black center">
             {{ person.name }}
           </span>
-          <span class="gray">
+          <span class="gray center">
             ({{ person.alumni_since }})
           </span>
         </span>
