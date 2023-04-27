@@ -168,14 +168,14 @@ button {
   }
 }
 
-footer {
-  margin-top: 20%;
-  background-image: url(assets/nd-mark.png);
-  background-repeat: no-repeat;
-  background-position-x: 10px;
-  background-position-y: 10px;
-  background-size: 500px;
-}
+// footer {
+//   margin-top: 20%;
+//   background-image: url(assets/nd-mark.png);
+//   background-repeat: no-repeat;
+//   background-position-x: 10px;
+//   background-position-y: 10px;
+//   background-size: 500px;
+// }
 
 body {
   display: flex;
@@ -207,4 +207,9 @@ p, ul, ol {
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+.footer-img {
+  margin-top: 20%;
+  opacity: 0.6;
 }
