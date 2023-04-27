@@ -1,6 +1,4 @@
-# Website for the CMU Data Interaction Group
-
-Deployed at https://dig.cmu.edu/.
+# Website for the Notre Dame HCI group
 
 The setup is inspired by https://github.com/visdesignlab/visdesignlab.github.io and https://github.com/domoritz/domoritz.github.io. 
 
