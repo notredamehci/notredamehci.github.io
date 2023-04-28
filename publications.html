@@ -2,7 +2,8 @@
 layout: page
 title: Publications
 subtitle: We publish at Visualization, Machine Learning, and Data Science conferences.
-description: Recent publications from the Data Interaction Group at Visualization, Machine Learning, and Data Science conferences.
+description: Recent publications from the Data Interaction Group at Visualization, Machine Learning, and Data Science
+conferences.
 ---
 
 <div id="facets" class="dn flex flex-row flex-wrap">
@@ -52,12 +53,12 @@ description: Recent publications from the Data Interaction Group at Visualizatio
 
   <div class="publication flex mt4" data-pub='{{ pub | jsonify | escape }}'>
     {% assign thumb = 'assets' | append: pub.url | replace: '.html',
-      '_thumb.png' %}
+    '.png' %}
     <div class="h3 mr4 flex-shrink-0 preview-image ba b--black-05 dn db-ns "
       style="background-image: url('{{ thumb | relative_url }}')"></div>
     <div>
       <h3 class="mt0 f4 measure-wide lh-title mb2" id="{{ anchor }}">{% for award in pub.awards %}<i
-          class="fas fa-{% if award == "Best Paper Award" %}trophy gold{% else %}award cmu-red{% endif %}"
+          class="fas fa-{% if award == " Best Paper Award" %}trophy gold{% else %}award cmu-red{% endif %}"
           title="{{ award }}"></i> {% endfor %}<a href="{{ pub.url }}" class="black link">{{ pub.title }}</a></h3>
       <div class="fw2 lh-copy">
         {% for author in pub.authors %}{% include person name=author %}{% unless forloop.last %}, {% endunless %}
@@ -70,7 +71,7 @@ description: Recent publications from the Data Interaction Group at Visualizatio
           {% endif %}
           {{ pub.venue }}
           {% if pub.venue_location %}
-            | {{ pub.venue_location }}
+          | {{ pub.venue_location }}
           {% endif %}
           {% if pub.venue_url %}</a>{% endif %}
         {{ pub.year }}
@@ -79,7 +80,8 @@ description: Recent publications from the Data Interaction Group at Visualizatio
 
       {% if pub.description %}
       <p class="lh-copy mv1">
-        {{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}
+        {{ pub.description | markdownify | remove: '
+      <p>' | remove: '</p>' }}
       </p>
       {% endif %}
 
