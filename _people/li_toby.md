@@ -1,5 +1,5 @@
 ---
-name: Toby Jia-jun Li
+name: Toby Jia-Jun Li
 website: https://toby.li/
 image: /assets/people/tobyli.jpg
 role: Faculty
