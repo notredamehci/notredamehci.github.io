@@ -7,8 +7,8 @@ layout: default
     <h1 class="f1 measure mt3">Notre Dame Human-Computer Interaction Group</h1>
     <p class="f4 measure lh-copy">
       We are a research group at the
-      <a href="https://cse.nd.edu/"
-        >Department of Computer Science and Engineering </a> at the <a href="https://www.nd.edu/">University of Notre Dame.</a>
+      <a href="https://cse.nd.edu/">Department of Computer Science and Engineering </a> at the <a
+        href="https://www.nd.edu/">University of Notre Dame.</a>
     </p>
     <!-- <h3>
       <a class="cta" href="{{ '/about' | relative_url }}"
@@ -24,32 +24,37 @@ layout: default
 
     <p class="f4 measure-wide lh-copy">
       Our research focus lies at the intersection of
-      human-computer interaction, visualization, computer-supported cooperative work, machine learning, social computing, user-centered design, etc.
+      human-computer interaction, visualization, computer-supported cooperative work, machine learning, social
+      computing, user-centered design, etc.
     </p>
 
     <div class="flex flex-row-ns flex-wrap pt3">
       <div class="mr2-ns mv2 w-20-l w-40-m flex-auto shadow-4 pa3 br2">
         <h3 class="f4 mt0">Information Visualization</h3>
         <p class="measure lh-copy">
-          We are interested in decision situations where there are opportunities to leverage the human perceptual system to help people make sense of their data through visual analysis.
+          We are interested in decision situations where there are opportunities to leverage the human perceptual system
+          to help people make sense of their data through visual analysis.
         </p>
       </div>
       <div class="mh2-ns mr0-m mv2 w-20-l w-40-m flex-auto shadow-4 pa3 br2">
         <h3 class="f4 mt0">Human-AI Interaction</h3>
         <p class="measure lh-copy">
-          We use human-centered methods to design, build, and study interactive systems to empower individuals to create, configure, and benefit from AI-powered computing systems.
+          We use human-centered methods to design, build, and study interactive systems to empower individuals to
+          create, configure, and benefit from AI-powered computing systems.
         </p>
       </div>
       <div class="mh2-l mr2-ns mv2 w-20-l w-40-m flex-auto shadow-4 pa3 br2">
         <h3 class="f4 mt0">Computational Social Science</h3>
         <p class="measure lh-copy">
-          We employ computational research methods to gain understanding of social phenomena and design socio-technical systems.
+          We employ computational research methods to gain understanding of social phenomena and design socio-technical
+          systems.
         </p>
       </div>
       <div class="ml2-ns mv2 w-20-l w-40-m flex-auto shadow-4 pa3 br2">
         <h3 class="f4 mt0">Design for Special Population</h3>
         <p class="measure lh-copy">
-          We investigate technology-driven solutions that increase the effectiveness of training and improve the quality of life for underrepresented and underserved populations.
+          We investigate technology-driven solutions that increase the effectiveness of training and improve the quality
+          of life for underrepresented and underserved populations.
         </p>
       </div>
     </div>
@@ -64,9 +69,7 @@ layout: default
         limit:5 %}
         <li class="pb2">
           <a href="{{ post.url }}">{{ post.title }}</a>
-          <time datetime="{{ post.date }}" class="db f6 black-80"
-            >{{ post.date | date: "%b %Y" }}</time
-          >
+          <time datetime="{{ post.date }}" class="db f6 black-80">{{ post.date | date: "%b %Y" }}</time>
         </li>
         {% endfor %}
       </ul>
@@ -91,7 +94,7 @@ layout: default
       </ul>
     </section> -->
   </div>
-<!-- 
+  <!-- 
   <div class="mv3 measure-wide">
     <h2 class="f3 mt0">Participate</h2>
     <p class="lh-copy">
@@ -109,21 +112,16 @@ layout: default
       {% assign recent_pubs = site.publications | reverse %} {% for pub in
       recent_pubs limit:5 %}
       <div class="mt4 mt3-ns flex flex-row-ns flex-column">
-        {% assign thumb = 'assets' | append: pub.url | replace: '.html',
-        '_thumb.png' %}
-        <div
-          class="h3 mr3-ns mb2 mb0-ns flex-shrink-0 preview-image ba b--black-05 db"
-          style="background-image: url('{{ thumb | relative_url }}')"
-        ></div>
+        {% assign thumb = 'assets' | append: pub.url | replace: '.html', '.png' %}
+        <div class="h3 mr3-ns mb2 mb0-ns flex-shrink-0 preview-image ba b--black-05 db"
+          style="background-image: url('{{ thumb | relative_url }}')"></div>
         <div class="measure-wide">
           <div class="mb1">
-            <a href="{{ pub.url }}" class="b link black hover-cmu-red"
-              >{{ pub.title }}</a
-            >
+            <a href="{{ pub.url }}" class="b link black hover-cmu-red">{{ pub.title }}</a>
             <span class="fw2">
               {% for author in pub.authors %}{% include person name=author %}{%
-              unless forloop.last %}, {% endunless %}{% endfor %}</span
-            >, <span class="nowrap">{{ pub.venue }} {{ pub.year }}</span>
+              unless forloop.last %}, {% endunless %}{% endfor %}</span>, <span class="nowrap">{{ pub.venue }} {{
+              pub.year }}</span>
           </div>
           <a href="{{ pub.url }}" class="cta">Show details</a>
         </div>
