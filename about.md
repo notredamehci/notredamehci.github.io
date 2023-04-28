@@ -7,4 +7,4 @@ description: Learn more about the HCI Group at the University of Notre Dame.
 
 ## What Motivates Us
 
-Leave blank
+Coming quick soon!
