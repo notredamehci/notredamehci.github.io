@@ -82,3 +82,7 @@ short_doi: ...
 ```
 
 Note that you don't have to specify all the properties, but we do recommend you to specify several important properties including `year`, `title`, `authors`, `link`, `venue`, `highlight`, `venue_location`, `venue_tags`, `type`, `tags`, `pdf`, and abstract.
+
+#### Add teaser figure
+
+Please also upload the paper's teaser figure to `assets/publications`. The image name should be same as the `.md` file you created for the publication with the suffix changed to `.png`.
