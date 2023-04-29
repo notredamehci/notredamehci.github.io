@@ -31,7 +31,7 @@ website: [personal link]
 image: /assets/people/[firstname+lastname].[png/jpg/jpeg/...]
 role: Faculty | Graduate Student | Undergraduate | Staff | Visiting Scholar
 title: Professor | Associate Professor | Assistant Professor | Postdoctorate | PhD Student | Master Student | Undergraduate | Visiting PhD Student | Visiting Master Student | Visiting Undergraduate | PhD Graduate | ...
-alumni_since: [year]
+alumni_since: [year he/she/they left]
 ---
 ```
 
