@@ -22,7 +22,7 @@ docker run \
 
 You can take two steps to add a new member under the `people` page:
 
-1. Create a new file named `[last_name]_[first_name].md` for the member under `_people` folder, make sure both last name and first name are lower cased. It would ensure the people appear in an alphbetical order regarding their last name. The file content should follow the format:
+1. Create a new file named `[last_name]_[first_name].md` for the member under `_people` folder, make sure both last name and first name are lower cased. It ensures that people would appear in an alphbetical order regarding their last name. The file content should follow the format:
 
 ```
 ---
