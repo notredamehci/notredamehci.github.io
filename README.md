@@ -18,8 +18,23 @@ docker run \
 
 ## Add Content
 
-To add specific content, follow the README guides in the corresponding directories:
+### Add a member
 
-* [Add a person](_people)
-* [Add a publication](_publications)
-* [Add a post](_posts)
+You can take two steps to add a new member under the `people` page:
+
+1. Create a new file named `[last_name]_[first_name].md` for the member under `_people` folder, make sure both last name and first name are lower cased. It would make sure the people appear in an alphbetical order regarding their last name. The file content should follow the format:
+
+```
+---
+name: [member's name]
+website: [personal link]
+image: /assets/people/[firstname+lastname].png
+role: Faculty | Graduate Student | Undergraduate | Staff | Visiting Scholar
+title: Professor | Associate Professor | Assistant Professor | Postdoctorate | PhD Student | Master Student | Undergraduate | Visiting PhD Student | Visiting Master Student | Visiting Undergraduate | PhD Graduate | ...
+alumni_since: [year]
+---
+```
+
+Note: `alumni_since` property should only be specified when the person is graduated, members with this property specified would appear in the `Alumni` section. 
+
+
