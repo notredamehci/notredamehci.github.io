@@ -35,6 +35,6 @@ alumni_since: [year he/she/they left]
 ---
 ```
 
-Note: `alumni_since` property should only be specified when the person has graduated or left, members with this property specified would appear in the `Alumni` section. Also, for undergraduates, it recommends to specify their `title` property as their class (e.g. `Class of 2025`)
+Note: `alumni_since` property should only be specified when the person has graduated or left, members with this property specified would appear in the `Alumni` section. Also, for undergraduates, it recommends to specify their `title` property as their graduating class (e.g. `Class of 2025`)
 
 2. Add the member's profile image to `assets/people` folder. The name format should be `firstname+lastname.[png/jpg/jpeg/...]`. For example, the name of the profile image for Zheng Zhang should be `zhengzhang.jpg`. Make sure the suffix is line with what you specify in the `image` property in the member's `.md` file.
