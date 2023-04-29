@@ -38,3 +38,44 @@ alumni_since: [year he/she/they left]
 Note: `alumni_since` property should only be specified when the person has graduated or left, members with this property specified would appear in the `Alumni` section. Also, for undergraduates at Notre Dame, it recommends to specify their `title` property as their graduating class (e.g. `Class of 2025`)
 
 2. Add the member's profile image to `assets/people` folder. The name format should be `firstname+lastname.[png/jpg/jpeg/...]`. For example, the name of the profile image for Zheng Zhang should be `zhengzhang.jpg`. Make sure the suffix is line with what you specify in the `image` property in the member's `.md` file.
+
+### Add a publication
+
+You can add a publication by creating a new file named `[year]-[conference]-[paper name abbr].md` in the `_publications` folder. The file should follow the format:
+
+```
+---
+layout: publication
+year: [published year]
+title: "[paper title]"
+authors:
+  - Author 1
+  - Author 2
+  - ...
+link: [digital library link of the paper]
+venue: [venue name]
+highlight: true | false (control wthether or not the paper would appear when clicking "Only show highlights")
+venue_location: [City], [State/Country]
+venue_tags:
+  - [conference name]
+  - [other tags]
+venue_url: [venue link]
+type:
+  - Conference | Journal | Workshop | ...
+tags:
+  - [paper keyword 1]
+  - [paper keyword 2]
+  - ...
+pdf: [PDF link]
+award:
+  - [award 1]
+  - [award 2]
+twitter:
+  - [twitter link]
+recording: [recording link]
+slides: [slides link]
+---
+
+[Put abstract here]
+
+```
