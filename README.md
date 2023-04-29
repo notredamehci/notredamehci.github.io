@@ -70,12 +70,15 @@ pdf: [PDF link]
 award:
   - [award 1]
   - [award 2]
-twitter:
-  - [twitter link]
+twitter: "[twitter link]"
 recording: [recording link]
 slides: [slides link]
+doi: ...
+short_doi: ...
 ---
 
 [Put abstract here]
 
 ```
+
+Note that you don't have to specify all the properties, but we do recommend you to specify several important properties including `year`, `title`, `authors`, `link`, `venue`, `highlight`, `venue_location`, `venue_tags`, `type`, `tags`, `pdf`.
