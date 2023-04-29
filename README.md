@@ -52,7 +52,7 @@ authors:
   - Author 1
   - Author 2
   - ...
-link: [digital library link of the paper]
+link: [digital library or project link of the paper]
 venue: [venue name]
 highlight: true | false (control wthether or not the paper would appear when clicking "Only show highlights")
 venue_location: [City], [State/Country]
