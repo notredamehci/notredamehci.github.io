@@ -23,6 +23,10 @@ collections:
     output: false
   courses:
     output: true
+seo:
+  title: Notre Dame HCI group
+  description: We are a HCI research group at the Unviersity of Notre Dame
+  tagline: HCI research group at the Unviersity of Notre Dame
 
 # Build settings
 markdown: kramdown
