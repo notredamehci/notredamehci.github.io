@@ -28,7 +28,7 @@ You can take two steps to add a new member under the `people` page:
 ---
 name: [member's name]
 website: [personal link]
-image: /assets/people/[firstname+lastname].png
+image: /assets/people/[firstname+lastname].[png/jpg/jpeg/...]
 role: Faculty | Graduate Student | Undergraduate | Staff | Visiting Scholar
 title: Professor | Associate Professor | Assistant Professor | Postdoctorate | PhD Student | Master Student | Undergraduate | Visiting PhD Student | Visiting Master Student | Visiting Undergraduate | PhD Graduate | ...
 alumni_since: [year]
@@ -37,4 +37,4 @@ alumni_since: [year]
 
 Note: `alumni_since` property should only be specified when the person is graduated, members with this property specified would appear in the `Alumni` section. 
 
-
+2. Add the member's profile image to `assets/people` folder. The name format should be `firstname+lastname.[png/jpg/jpeg/...]`. For example, the name of the profile image for Zheng Zhang should be `zhengzhang.jpg`. Make sure the suffix is line with what you specify in the `image` property in the member's `.md` file.
