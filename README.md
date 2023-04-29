@@ -1,10 +1,10 @@
 # Website for the Notre Dame HCI group
 
-The setup is inspired by https://github.com/visdesignlab/visdesignlab.github.io and https://github.com/domoritz/domoritz.github.io. 
+This is the website hub for Notre Dame HCI group led by [Ronald Metoyer](http://sites.nd.edu/ronald-metoyer/), [Toby Jia-jun Li](https://toby.li/), [Diego Gómez-Zará](https://www.dgomezara.cl/), and [Karla Badillo-Urquiola](https://kbadillou.weebly.com/). The website was built by [Zheng Zhang](http://zhengzhang.me/) and got inspired by [CMU's Data Interaction Group](https://dig.cmu.edu/).
 
-## Run
+## Run and deploy
 
-Install Jekyll dependencies with `bundle`. To start this page, run `bundle exec jekyll serve --livereload`.
+The website is deployed on Github Page at this time, any change made to the repo would take effect automatically after a few minutes that pull request gets approved. To run the website on server, please install Jekyll dependencies with `bundle`. Then run `bundle exec jekyll serve --livereload` to start the website page.
 
 ## Run with Docker
 
